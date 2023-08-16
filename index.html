@@ -3,16 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230807160007">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230807160007">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230816204253">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230816204253">
 	<title>Главная</title>
 	
 </head>
 
 <body>
 	<div class="wrapper">
-		<main class="page">
-			<section class="main">
+		<main>
+			<section class="main" id="main">
 				<div class="main__header header-block">
 					<a href="" class="header-block__back">
 
@@ -21,7 +21,7 @@
 						<a href="" class="header-block__connect">Связаться</a>
 						<div class="header-block__title">Приветственное окно</div>
 					</div>
-					<a href="" class="header-block__next">
+					<a data-goto="#guests-white" href="#" class="header-block__next">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
@@ -100,9 +100,9 @@
 					<picture><source srcset="img/hand-2.webp" type="image/webp"><img src="img/hand-2.png" alt=""></picture>
 				</div>
 			</section>
-			<section class="guests-white">
+			<section class="guests-white" id="guests-white">
 				<div class="guests-white__header header-block">
-					<a href="" class="header-block__back">
+					<a data-goto="#main" href="#" class="header-block__back">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
@@ -113,7 +113,7 @@
 						<a href="" class="header-block__connect">Связаться</a>
 						<div class="header-block__title">Меню миксов для гостей</div>
 					</div>
-					<a href="" class="header-block__next">
+					<a data-goto="#guests-black" href="#" class="header-block__next">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
@@ -291,9 +291,9 @@
 					<picture><source srcset="img/guests-white-icon.webp" type="image/webp"><img src="img/guests-white-icon.png" alt="рука"></picture>
 				</div>
 			</section>
-			<div class="guests-black">
+			<div class="guests-black" id="guests-black">
 				<div class="guests-black__header header-block header-block_white">
-					<a href="" class="header-block__back">
+					<a data-goto="#guests-white" href="#" class="header-block__back">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
@@ -304,7 +304,7 @@
 						<a href="" class="header-block__connect">Связаться</a>
 						<div class="header-block__title">Меню миксов для гостей</div>
 					</div>
-					<a href="" class="header-block__next">
+					<a data-goto="#instrument" href="#" class="header-block__next">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
@@ -312,80 +312,100 @@
 						</svg>
 					</a>
 				</div>
-				<div class="guests-black__container">
-					<div class="guests-black__icon">
-						<img src="img/swap.svg" alt="">
-					</div>
-					<div class="guests-black__slider swiper">
-						<div class="guests-black__round">
-							<picture><source srcset="img/guests-round.webp" type="image/webp"><img src="img/guests-round.png" alt=""></picture>
+				<div class="guests-black__bg-wrap">
+					<div class="guests-black__container">
+						<div class="guests-black__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+								fill="none">
+								<path
+									d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+									fill="white" />
+								<path
+									d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+									fill="white" />
+							</svg>
 						</div>
-						<div class="guests-black__wrapper swiper-wrapper">
-							<div class="guests-black__slide swiper-slide">
-								<ul class="guests-black__list">
-									<li class="guests-black__item">Каждый микс прорабатывает команда Департамента
-										Вкуснючих Миксочков, <span>прокуривая от 70 чашек в поисках идеального
-											сочетания.</span>
-									</li>
-									<li class="guests-black__item">Секрет нашего меню кроется в определенной <span>
-										технологии
-											замешивания и в засекреченных пропорциях табаков.
-									</span></li>
-								</ul>
-								<div class="guests-black__image">
-									<picture><source srcset="img/guests-slider1.webp" type="image/webp"><img src="img/guests-slider1.png" alt="нутелла"></picture>
-								</div>
+						<div class="guests-black__slider swiper">
+							<div class="guests-black__round">
+								<picture><source srcset="img/guests-round.webp" type="image/webp"><img src="img/guests-round.png" alt=""></picture>
 							</div>
-							<div class="guests-black__slide swiper-slide">
-								<ul class="guests-black__list">
-									<li class="guests-black__item">Меню постоянно <span>обновляется новинками.</span>
-									</li>
-									<li class="guests-black__item">Нам постоянно <span>есть чем удивить</span> тех, кто уже
-										попробовал все позиции нашего меню.</li>
-									<li class="guests-black__item">К основному меню прилагается всегда <span>
-										обновляемое раз в
-											сезон
-									</span> меню временных миксов.</li>
-								</ul>
-								<div class="guests-black__image">
-									<picture><source srcset="img/guests-slider2.webp" type="image/webp"><img src="img/guests-slider2.png" alt=""></picture>
+							<div class="guests-black__wrapper swiper-wrapper">
+								<div class="guests-black__slide swiper-slide">
+									<ul class="guests-black__list">
+										<li class="guests-black__item">Каждый микс прорабатывает команда Департамента
+											Вкуснючих Миксочков, <span>прокуривая от 70 чашек в поисках идеального
+												сочетания.</span>
+										</li>
+										<li class="guests-black__item">Секрет нашего меню кроется в определенной <span>
+												технологии
+												замешивания и в засекреченных пропорциях табаков.
+											</span></li>
+									</ul>
+									<div class="guests-black__image">
+										<picture><source srcset="img/guests-slider1.webp" type="image/webp"><img src="img/guests-slider1.png" alt="карточка нутелла"></picture>
+									</div>
 								</div>
-							</div>
-							<div class="guests-black__slide swiper-slide">
-								<ul class="guests-black__list">
-									<li class="guests-black__item"><span>Вопрос:</span> Люди 55 лет едят один и тот же Чизбургер и
-										БигМак, так почему подаем гостям каждый раз случайные сочетания вкусов?
-									</li>
-									<li class="guests-black__item"><span>Ответ:</span> На глаз не получится сделать ту вкусовую
-										палитру, которую захочется заказать еще раз. А если и получится – повторить уже
-										будет невозможно.</li>
-								</ul>
-								<div class="guests-black__image">
-									<picture><source srcset="img/guests-slider3.webp" type="image/webp"><img src="img/guests-slider3.png" alt=""></picture>
+								<div class="guests-black__slide swiper-slide">
+									<ul class="guests-black__list">
+										<li class="guests-black__item">Меню постоянно <span>обновляется
+												новинками.</span>
+										</li>
+										<li class="guests-black__item">Нам постоянно <span>есть чем удивить</span> тех,
+											кто
+											уже
+											попробовал все позиции нашего меню.</li>
+										<li class="guests-black__item">К основному меню прилагается всегда <span>
+												обновляемое раз в
+												сезон
+											</span> меню временных миксов.</li>
+									</ul>
+									<div class="guests-black__image">
+										<picture><source srcset="img/guests-slider2.webp" type="image/webp"><img src="img/guests-slider2.png" alt="карточка fuzetea"></picture>
+									</div>
 								</div>
-							</div>
-							<div class="guests-black__slide swiper-slide">
-								<ul class="guests-black__list">
-									<li class="guests-black__item"><span>97% гостей курят только миксы –</span> в наших заведениях мы
-										уже отказались от кальянного бара табаков, но вы можете оборудовать его по
-										вашему усмотрению.
-									</li>
-								</ul>
-								<div class="guests-black__image">
-									<picture><source srcset="img/guests-slider4.webp" type="image/webp"><img src="img/guests-slider4.png" alt=""></picture>
+								<div class="guests-black__slide swiper-slide">
+									<ul class="guests-black__list">
+										<li class="guests-black__item"><span>Вопрос:</span> Люди 55 лет едят один и тот
+											же
+											Чизбургер и
+											БигМак, так почему подаем гостям каждый раз случайные сочетания вкусов?
+										</li>
+										<li class="guests-black__item"><span>Ответ:</span> На глаз не получится сделать
+											ту
+											вкусовую
+											палитру, которую захочется заказать еще раз. А если и получится – повторить
+											уже
+											будет невозможно.</li>
+									</ul>
+									<div class="guests-black__image">
+										<picture><source srcset="img/guests-slider3.webp" type="image/webp"><img src="img/guests-slider3.png" alt="карточка байкал"></picture>
+									</div>
 								</div>
-							</div>
-							<div class="guests-black__slide swiper-slide">
-								<div class="guests-black__image">
-									<picture><source srcset="img/guests-slider5.webp" type="image/webp"><img src="img/guests-slider5.png" alt=""></picture>
+								<div class="guests-black__slide swiper-slide">
+									<ul class="guests-black__list">
+										<li class="guests-black__item"><span>97% гостей курят только миксы –</span> в
+											наших
+											заведениях мы
+											уже отказались от кальянного бара табаков, но вы можете оборудовать его по
+											вашему усмотрению.
+										</li>
+									</ul>
+									<div class="guests-black__image">
+										<picture><source srcset="img/guests-slider4.webp" type="image/webp"><img src="img/guests-slider4.png" alt="карточка матча"></picture>
+									</div>
 								</div>
-								<div class="guests-black__image">
-									<picture><source srcset="img/guests-slider6.webp" type="image/webp"><img src="img/guests-slider6.png" alt=""></picture>
+								<div class="guests-black__slide swiper-slide">
+									<div class="guests-black__image">
+										<picture><source srcset="img/guests-slider5.webp" type="image/webp"><img src="img/guests-slider5.png" alt="карточка дынная сангрия"></picture>
+									</div>
+									<div class="guests-black__image">
+										<picture><source srcset="img/guests-slider6.webp" type="image/webp"><img src="img/guests-slider6.png" alt="карточка сибирский флекс"></picture>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="guests-black__scrollbar swiper-scrollbar"></div>
 					</div>
-					<div class="guests-black__scrollbar swiper-scrollbar"></div>
 				</div>
 				<div class="guests-black__decor">
 					<picture><source srcset="img/guests-black-icon1.webp" type="image/webp"><img src="img/guests-black-icon1.png" alt=""></picture>
@@ -394,9 +414,9 @@
 					<picture><source srcset="img/guests-black-icon2.webp" type="image/webp"><img src="img/guests-black-icon2.png" alt=""></picture>
 				</div>
 			</div>
-			<div class="instrument">
+			<div class="instrument" id="instrument">
 				<div class="instrument__header header-block header-block_white">
-					<a href="" class="header-block__back">
+					<a data-goto="#guests-black" href="#" class="header-block__back">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
@@ -407,7 +427,7 @@
 						<a href="" class="header-block__connect">Связаться</a>
 						<div class="header-block__title">Меню как инструмент</div>
 					</div>
-					<a href="" class="header-block__next">
+					<a data-goto="#setting" href="#" class="header-block__next">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
 							<path
 								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
@@ -420,18 +440,23 @@
 						<div class="instrument__column">
 							<div class="instrument__title"><span>Никому</span> <br> и <span>никогда</span></div>
 							<div class="instrument__text">
-								<p>не удавалось сделать адекватную систему  учета табака в кальян-баре. </p>
+								<p>не удавалось сделать адекватную систему учета табака в кальян-баре. </p>
 							</div>
 						</div>
 						<div class="instrument__middle">
 							<div class="instrument__head">но</div>
-							<svg xmlns="http://www.w3.org/2000/svg" width="132" height="39" viewBox="0 0 132 39" fill="none">
-								<path d="M3.53427 7.92215C45.4658 4.95206 119.21 0.108922 126.616 4.88228C145.889 12.8901 -0.357199 16.2911 21.2984 22.4938C28.816 25.5591 59.023 27.0215 82.402 24.1548C105.781 21.2881 101.677 32.0906 65.3989 35.4916" stroke="white" stroke-width="5.69419" stroke-linecap="round" stroke-linejoin="round"/>
-							  </svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="132" height="39" viewBox="0 0 132 39"
+								fill="none">
+								<path
+									d="M3.53427 7.92215C45.4658 4.95206 119.21 0.108922 126.616 4.88228C145.889 12.8901 -0.357199 16.2911 21.2984 22.4938C28.816 25.5591 59.023 27.0215 82.402 24.1548C105.781 21.2881 101.677 32.0906 65.3989 35.4916"
+									stroke="white" stroke-width="5.69419" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
 						</div>
 						<div class="instrument__column">
 							<div class="instrument__block">
-								<p>Теперь мы предлагаем  <span>готовое</span>  и  <span>максимально упрощенное</span> управленческое решение, которое приносит деньги и не имеет аналогов</p>
+								<p>Теперь мы предлагаем <span>готовое</span> и <span>максимально упрощенное</span>
+									управленческое решение, которое приносит деньги и не имеет аналогов</p>
 							</div>
 						</div>
 					</div>
@@ -440,30 +465,42 @@
 					<div class="instrument__row">
 						<div class="instrument__wrap">
 							<div class="instrument__item">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2" stroke="white" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round"/>
-								  </svg>
-								<div class="instrument__value">- Готовое меню</div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+									fill="none">
+									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2"
+										stroke="white" stroke-width="2.55" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<a href="#" class="instrument__value">- Готовое меню</a>
 							</div>
 							<div class="instrument__item">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2" stroke="white" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round"/>
-								  </svg>
-								<div class="instrument__value">- Обучение сотрудников</div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+									fill="none">
+									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2"
+										stroke="white" stroke-width="2.55" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<a href="#" class="instrument__value">- Обучение сотрудников</a>
 							</div>
 						</div>
 						<div class="instrument__wrap">
 							<div class="instrument__item">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2" stroke="white" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round"/>
-								  </svg>
-								<div class="instrument__value">- Готовые миксы</div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+									fill="none">
+									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2"
+										stroke="white" stroke-width="2.55" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<a href="#" class="instrument__value">- Готовые миксы</a>
 							</div>
 							<div class="instrument__item">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2" stroke="white" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round"/>
-								  </svg>
-								<div class="instrument__value">- Интерьерные решения</div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+									fill="none">
+									<path d="M16.2246 10.2385L9.21211 17.3L2.19961 10.2385M9.21211 16.3192L9.21211 2"
+										stroke="white" stroke-width="2.55" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<a href="#" class="instrument__value">- Интерьерные решения</a>
 							</div>
 						</div>
 					</div>
@@ -481,12 +518,1888 @@
 					<picture><source srcset="img/instrument-decor2.webp" type="image/webp"><img src="img/instrument-decor2.png" alt=""></picture>
 				</div>
 			</div>
+			<div class="bg-wrap">
+				<div class="setting" id="setting">
+					<div class="setting__header header-block">
+						<a data-goto="#instrument" href="#" class="header-block__back">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"
+								fill="none">
+								<path
+									d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+									fill="#151515" />
+							</svg>
+						</a>
+						<div class="header-block__content">
+							<a href="" class="header-block__connect">Связаться</a>
+							<div class="header-block__title">Меню как инструмент</div>
+						</div>
+						<a data-goto="#possibilities" href="#" class="header-block__next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"
+								fill="none">
+								<path
+									d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+									fill="#151515" />
+							</svg>
+						</a>
+					</div>
+					<div class="setting__container">
+						<div class="setting__head">
+							Дельта потери в работе с табаком увеличивает себестоимость забивки <span>на 40%.</span>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+							<path d="M16.9463 10.7638L9.48663 18.2756L2.02698 10.7638M9.48663 17.2323L9.48664 2.00003"
+								stroke="#151515" stroke-width="2.7126" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="setting__container">
+						<div class="setting__text">
+							Перетарка, забивки, нерациональное использование сырья мастером, отсутствие контроля за
+							табачным
+							баром
+						</div>
+						<div class="setting__label">
+							(забудьте)
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+							<path d="M16.9463 10.7638L9.48663 18.2756L2.02698 10.7638M9.48663 17.2323L9.48664 2.00003"
+								stroke="#151515" stroke-width="2.7126" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="setting__container">
+						<div class="setting__bottom">
+							Мы предлагаем поставку готовых миксов в таре.
+							<span>1 кальян = 1 тара с миксом </span>
+						</div>
+					</div>
+					<div class="setting__image">
+						<picture><source srcset="img/main-img.webp" type="image/webp"><img src="img/main-img.png" alt="ковер"></picture>
+					</div>
+					<div class="setting__icon-1">
+						<picture><source srcset="img/setting-icon1.webp" type="image/webp"><img src="img/setting-icon1.png" alt=""></picture>
+					</div>
+					<div class="setting__icon-2">
+						<picture><source srcset="img/setting-icon2.webp" type="image/webp"><img src="img/setting-icon2.png" alt=""></picture>
+					</div>
+					<div class="setting__icon-3">
+						<picture><source srcset="img/setting-icon3.webp" type="image/webp"><img src="img/setting-icon3.png" alt=""></picture>
+					</div>
+					<div class="setting__icon-4">
+						<picture><source srcset="img/setting-icon4.webp" type="image/webp"><img src="img/setting-icon4.png" alt=""></picture>
+					</div>
+					<div class="setting__bg-bottom"></div>
+				</div>
+				<section class="possibilities" id="possibilities">
+					<div class="possibilities__header header-block">
+						<a data-goto="#setting" href="#" class="header-block__back">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"
+								fill="none">
+								<path
+									d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+									fill="#151515" />
+							</svg>
+						</a>
+						<div class="header-block__content">
+							<a href="" class="header-block__connect">Связаться</a>
+							<div class="header-block__title">Меню как инструмент</div>
+						</div>
+						<a data-goto="#chips" href="#" class="header-block__next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"
+								fill="none">
+								<path
+									d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+									fill="#151515" />
+							</svg>
+						</a>
+					</div>
+					<div class="possibilities__bg-wrap">
+						<div class="possibilities__container">
+							<div class="possibilities__row">
+								<h2 class="possibilities__title">Возможно<br>сти:
+								</h2>
+								<div class="possibilities__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+										fill="none">
+										<path
+											d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+											fill="#151515" />
+										<path
+											d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+											fill="#151515" />
+									</svg>
+								</div>
+							</div>
+							<div class="possibilities__slider swiper">
+								<div class="possibilities__wrapper swiper-wrapper">
+									<div class="possibilities__slide swiper-slide">
+										<ul class="possibilities__list">
+											<li class="possibilities__item">Калькуляция себестоимости <span>каждого
+													кальяна
+													до 1 рубля.</span>
+											</li>
+											<li class="possibilities__item"><span>Полное исключение операционных
+													процессов</span> по табачному бару: никаких закупок, перетарки и
+												надзора.</li>
+										</ul>
+										<div class="possibilities__image">
+											<picture><source srcset="img/possibilities-slider1.webp" type="image/webp"><img src="img/possibilities-slider1.png" alt="карточка табак"></picture>
+										</div>
+									</div>
+									<div class="possibilities__slide swiper-slide">
+										<ul class="possibilities__list">
+											<li class="possibilities__item"><span>Уменьшение времени подачи
+													кальянов</span>
+												(время забивки уменьшается в 2-3 раза)</li>
+											<li class="possibilities__item">Не требуется профессиональный персонал
+												<span>(т.к. микс уже готов)</span>
+											</li>
+										</ul>
+										<div class="possibilities__image">
+											<picture><source srcset="img/possibilities-slider2.webp" type="image/webp"><img src="img/possibilities-slider2.png" alt="карточка табак"></picture>
+										</div>
+									</div>
+									<div class="possibilities__slide swiper-slide">
+										<ul class="possibilities__list">
+											<li class="possibilities__item">Учет <span>каждого грамма табака</span> в
+												продажах.
+											</li>
+											<li class="possibilities__item">Каждый микс = <span>инфоповод для ваших
+													гостей.</span> Разрабатываем новые миксы и делаем рассылку по вашим
+												гостям.</li>
+										</ul>
+										<div class="possibilities__image">
+											<picture><source srcset="img/possibilities-slider3.webp" type="image/webp"><img src="img/possibilities-slider3.png" alt="карточка кальян"></picture>
+										</div>
+									</div>
+									<div class="possibilities__slide swiper-slide">
+										<ul class="possibilities__list">
+											<li class="possibilities__item">Совсем необязательно разбираться в кальянах,
+												чтобы <span>открыть TEPLO Place</span>
+											</li>
+										</ul>
+										<div class="possibilities__image">
+											<picture><source srcset="img/possibilities-slider4.webp" type="image/webp"><img src="img/possibilities-slider4.png" alt="карточка кальянная"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="possibilities__scrollbar swiper-scrollbar"></div>
+						</div>
+					</div>
+					<div class="possibilities__decor">
+						<img src="img/possibilities-decor.svg" alt="">
+					</div>
+					<div class="possibilities__decor-2">
+						<picture><source srcset="img/hand.webp" type="image/webp"><img src="img/hand.png" alt=""></picture>
+					</div>
+				</section>
+				<section class="chips" id="chips">
+					<div class="chips__header header-block">
+						<a data-goto="#possibilities" href="#" class="header-block__back">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"
+								fill="none">
+								<path
+									d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+									fill="#151515" />
+							</svg>
+						</a>
+						<div class="header-block__content">
+							<a href="" class="header-block__connect">Связаться</a>
+							<div class="header-block__title">Меню как инструмент</div>
+						</div>
+						<a data-goto="#design" href="" class="header-block__next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"
+								fill="none">
+								<path
+									d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+									fill="#151515" />
+							</svg>
+						</a>
+					</div>
+					<div class="chips__bg-wrap">
+						<div class="chips__container">
+							<div class="chips__row">
+								<h2 class="chips__title">
+									Дополнительные
+									<span>фишки</span>
+								</h2>
+								<div class="chips__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+										fill="none">
+										<path
+											d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+											fill="#151515" />
+										<path
+											d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+											fill="#151515" />
+									</svg>
+								</div>
+							</div>
+							<div class="chips__slider swiper">
+								<div class="chips__round">
+									<picture><source srcset="img/chips-round.webp" type="image/webp"><img src="img/chips-round.png" alt=""></picture>
+								</div>
+								<div class="chips__wrapper swiper-wrapper">
+									<div class="chips__slide swiper-slide">
+										<ul class="chips__list">
+											<li class="chips__item">Ваша страничка заведения <span>на сайте
+													Teplo.team</span>
+											</li>
+											<li class="chips__item">Уникальная подставка, в которой можно
+												<span>послушать
+													запах каждого микса.</span>
+											</li>
+										</ul>
+										<div class="chips__image">
+											<picture><source srcset="img/chips-slider1.webp" type="image/webp"><img src="img/chips-slider1.png" alt="карточка человек"></picture>
+										</div>
+									</div>
+									<div class="chips__slide swiper-slide">
+										<ul class="chips__list">
+											<li class="chips__item">Полноценная <span>презентация формата</span> новым
+												гостям (см. школа мастеров)
+											</li>
+											<li class="chips__item">
+												<span>Униформа для сотрудников -</span> Профессиональные кителя
+											</li>
+										</ul>
+										<div class="chips__image">
+											<picture><source srcset="img/chips-slider2.webp" type="image/webp"><img src="img/chips-slider2.png" alt="карточка табаки"></picture>
+										</div>
+									</div>
+									<div class="chips__slide swiper-slide">
+										<ul class="chips__list">
+											<li class="chips__item"><span>Меню настольных игр,</span> поделенные на
+												жанры и
+												сгруппированные по кол-ву людей.
+											</li>
+											<li class="chips__item">Бесплатно подаем <span>мятную водичку</span></li>
+										</ul>
+										<div class="chips__image">
+											<picture><source srcset="img/chips-slider3.webp" type="image/webp"><img src="img/chips-slider3.png" alt="карточка мятная вода"></picture>
+										</div>
+									</div>
+									<div class="chips__slide swiper-slide">
+										<ul class="chips__list">
+											<li class="chips__item">Под каждый кальян мы выносим <span>дополнителные
+													комплименты,</span> например, под микс Манго-Ромашка – подаем
+												конфеты из
+												натурального Манго.
+											</li>
+											<li class="chips__item">Это позволяет <span>увеличивать средний чек</span>
+												на
+												продаже напитков и сильно повышает лояльность (и чаевые) гостей к
+												заведению
+												(и к мастерам). </li>
+										</ul>
+										<div class="chips__image">
+											<picture><source srcset="img/chips-slider4.webp" type="image/webp"><img src="img/chips-slider4.png" alt="карточка табаки"></picture>
+										</div>
+									</div>
+									<div class="chips__slide swiper-slide">
+										<ul class="chips__list">
+											<li class="chips__item"><span>Информационные таблички на кальянах –</span>
+												Сам
+												кальян становится частью микса и рассказывает гостям о том, какая
+												концепция
+												представлена у них в чаше.</li>
+										</ul>
+										<div class="chips__image">
+											<img src="img/chips-slider5.png"
+												alt="карточка информационная табличка на кальяне">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chips__scrollbar swiper-scrollbar"></div>
+						</div>
+					</div>
+					<div class="chips__decor">
+						<picture><source srcset="img/chips__decor-1.webp" type="image/webp"><img src="img/chips__decor-1.png" alt=""></picture>
+					</div>
+					<div class="chips__decor-2">
+						<picture><source srcset="img/chips__decor-2.webp" type="image/webp"><img src="img/chips__decor-2.png" alt=""></picture>
+					</div>
+					<div class="chips__decor-3">
+						<picture><source srcset="img/chips__decor-3.webp" type="image/webp"><img src="img/chips__decor-3.png" alt=""></picture>
+					</div>
+				</section>
+			</div>
+			<section class="design" id="design">
+				<div class="design__header header-block">
+					<a data-goto="#chips" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Дизайн элементов</div>
+					</div>
+					<a data-goto="#bot" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="design__bg-wrap">
+					<div class="design__container">
+						<div class="design__row">
+							<h2 class="design__title">
+								Дизай<span>н</span>
+								<span>элементов</span>
+							</h2>
+							<div class="design__icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+									fill="none">
+									<path
+										d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+										fill="#151515" />
+									<path
+										d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+										fill="#151515" />
+								</svg>
+							</div>
+						</div>
+						<div class="design__slider swiper">
+							<div class="design__block">
+								<picture><source srcset="img/design-icon.webp" type="image/webp"><img src="img/design-icon.png" alt="голубь"></picture>
+								<div class="design__label">Это наш <br> дизайнерский голубь</div>
+							</div>
+							<div class="design__wrapper swiper-wrapper">
+								<div class="design__slide swiper-slide">
+									<ul class="design__list">
+										<li class="design__item">Мы разрабатывали дизайн всех элементов <span
+												class="design__bg-span">не один год</span> и продолжаем менять его
+											для
+											всех составляющих в погоне за идеалом.
+										</li>
+									</ul>
+									<div class="design__image">
+										<picture><source srcset="img/design-slider1.webp" type="image/webp"><img src="img/design-slider1.png" alt="дизайн"></picture>
+									</div>
+								</div>
+								<div class="design__slide swiper-slide">
+									<ul class="design__list">
+										<li class="design__item"><span>“Живое” меню,</span> которое объясняет и
+											шутит.
+										</li>
+										<li class="design__item">Комплименты, дизайн которых заставляет
+											<span>улыбаться
+												и фотографировать.</span>
+										</li>
+									</ul>
+									<div class="design__image">
+										<picture><source srcset="img/design-slider2.webp" type="image/webp"><img src="img/design-slider2.png" alt="живое меню"></picture>
+									</div>
+								</div>
+								<div class="design__slide swiper-slide">
+									<ul class="design__list">
+										<li class="design__item">Брендированные <span>бирдекиле</span>
+										</li>
+										<li class="design__item"><span>Брендированные салфетницы</span> с выжженым
+											QR-кодом на систему лояльности
+										</li>
+									</ul>
+									<div class="design__image">
+										<picture><source srcset="img/design-slider3.webp" type="image/webp"><img src="img/design-slider3.png" alt="Брендированные салфетницы"></picture>
+									</div>
+								</div>
+								<div class="design__slide swiper-slide">
+									<ul class="design__list">
+										<li class="design__item">Наполняем жизнью даже <span>павер-банк.</span>
+										</li>
+										<li class="design__item"><span>Майя</span> – душа TEPLO Place.
+										</li>
+									</ul>
+									<div class="design__image">
+										<picture><source srcset="img/design-slider4.webp" type="image/webp"><img src="img/design-slider4.png" alt="павер-банк"></picture>
+									</div>
+								</div>
+								<div class="design__slide swiper-slide">
+									<ul class="design__list">
+										<li class="design__item"><span>Дизайн и постеры</span> миксов
+										</li>
+										<li class="design__item">Дизайн <span>Рассылок, дизайн картинок в Инстаграм,
+												дизайн рекламы</span>
+										</li>
+									</ul>
+									<div class="design__image">
+										<picture><source srcset="img/design-slider5.webp" type="image/webp"><img src="img/design-slider5.png" alt="дизайн постеров"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="design__scrollbar swiper-scrollbar"></div>
+						<div class="design__decor-3">
+							<picture><source srcset="img/design-decor3.webp" type="image/webp"><img src="img/design-decor3.png" alt=""></picture>
+						</div>
+					</div>
+				</div>
+				<div class="design__decor">
+					<img src="img/design-decor1.svg" alt="">
+				</div>
+				<div class="design__decor-2">
+					<picture><source srcset="img/design-decor2.webp" type="image/webp"><img src="img/design-decor2.png" alt=""></picture>
+				</div>
+				<div class="design__decor-4">
+					<img src="img/design-decor4.svg" alt="">
+				</div>
+			</section>
+			<section class="bot" id="bot">
+				<div class="bot__header header-block header-block_white">
+					<a data-goto="#design" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Система лояльности</div>
+					</div>
+					<a data-goto="#user" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="bot__container">
+					<div class="bot__body">
+						<div class="bot__content">
+							<div class="bot__row">
+								<div class="bot__icon">
+									<picture><source srcset="img/bot-icon.webp" type="image/webp"><img src="img/bot-icon.png" alt=""></picture>
+								</div>
+								<div class="bot__right">
+									<h2 class="bot__title">Бот Майя</h2>
+									<div class="bot__sub-title">online</div>
+								</div>
+							</div>
+							<div class="bot__items">
+								<div class="bot__item">Первая на рынке общепита система лояльности в Telegram за 2
+									клика.
+									<svg xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 35 28"
+										fill="none">
+										<path
+											d="M1.84 27.2496L34.501 27.2496L9.20887 0.474607L9.20887 14.1676C9.20887 19.066 6.099 23.4242 1.46685 25.0173C0.241964 25.4386 0.544694 27.2496 1.84 27.2496Z"
+											fill="white" />
+									</svg>
+								</div>
+								<div class="bot__item">Инструмент, удобный и доступный для каждого – не нужно
+									скачивать приложения, регистрироваться на сторонних сайтах, сохранять ненужные
+									карты и т.д.
+									<div class="bot__bottom">
+										<span>14:34</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+											viewBox="0 0 20 19" fill="none">
+											<g opacity="0.8">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M19.7129 4.8874C20.052 4.49884 20.0118 3.90903 19.6233 3.57001C19.2347 3.23099 18.6449 3.27115 18.3059 3.6597L10.2668 12.8734L9.70372 12.3213C9.33552 11.9603 8.74437 11.9661 8.38335 12.3343C8.02233 12.7025 8.02815 13.2937 8.39635 13.6547L9.66605 14.8996C9.84959 15.0796 10.0992 15.1759 10.3561 15.1659C10.6129 15.1559 10.8543 15.0405 11.0233 14.8468L19.7129 4.8874ZM13.5114 4.86132C13.8359 4.46062 13.7742 3.87267 13.3735 3.5481C12.9728 3.22352 12.3849 3.28524 12.0603 3.68594L4.64352 12.8423L1.61712 9.83584C1.25128 9.47242 0.660106 9.47437 0.296684 9.8402C-0.066738 10.206 -0.0647843 10.7972 0.301048 11.1606L4.06058 14.8954C4.24791 15.0815 4.50528 15.1796 4.76895 15.1653C5.03263 15.1511 5.27794 15.0259 5.44415 14.8207L13.5114 4.86132Z"
+													fill="#7A7A7A" />
+											</g>
+										</svg>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24"
+										fill="none">
+										<path
+											d="M32.131 23.8965H0.0576172L25.0799 0.822266V12.0087C25.0799 16.5604 28.0665 20.5728 32.4267 21.8791C33.5639 22.2198 33.3182 23.8965 32.131 23.8965Z"
+											fill="#FBEBDE" />
+									</svg>
+								</div>
+								<div class="bot__item">Единый Бот для всех заведений во франшизе.
+									<div class="bot__bottom">
+										<span>14:34</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+											viewBox="0 0 20 19" fill="none">
+											<g opacity="0.8">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M19.7129 4.8874C20.052 4.49884 20.0118 3.90903 19.6233 3.57001C19.2347 3.23099 18.6449 3.27115 18.3059 3.6597L10.2668 12.8734L9.70372 12.3213C9.33552 11.9603 8.74437 11.9661 8.38335 12.3343C8.02233 12.7025 8.02815 13.2937 8.39635 13.6547L9.66605 14.8996C9.84959 15.0796 10.0992 15.1759 10.3561 15.1659C10.6129 15.1559 10.8543 15.0405 11.0233 14.8468L19.7129 4.8874ZM13.5114 4.86132C13.8359 4.46062 13.7742 3.87267 13.3735 3.5481C12.9728 3.22352 12.3849 3.28524 12.0603 3.68594L4.64352 12.8423L1.61712 9.83584C1.25128 9.47242 0.660106 9.47437 0.296684 9.8402C-0.066738 10.206 -0.0647843 10.7972 0.301048 11.1606L4.06058 14.8954C4.24791 15.0815 4.50528 15.1796 4.76895 15.1653C5.03263 15.1511 5.27794 15.0259 5.44415 14.8207L13.5114 4.86132Z"
+													fill="#7A7A7A" />
+											</g>
+										</svg>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24"
+										fill="none">
+										<path
+											d="M32.131 23.8965H0.0576172L25.0799 0.822266V12.0087C25.0799 16.5604 28.0665 20.5728 32.4267 21.8791C33.5639 22.2198 33.3182 23.8965 32.131 23.8965Z"
+											fill="#FBEBDE" />
+									</svg>
+								</div>
+								<div class="bot__item">Гости, зарегистрированные в других заведениях – теперь
+									становятся вашей клиентской базой.
+									<div class="bot__bottom">
+										<span>14:34</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+											viewBox="0 0 20 19" fill="none">
+											<g opacity="0.8">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M19.7129 4.8874C20.052 4.49884 20.0118 3.90903 19.6233 3.57001C19.2347 3.23099 18.6449 3.27115 18.3059 3.6597L10.2668 12.8734L9.70372 12.3213C9.33552 11.9603 8.74437 11.9661 8.38335 12.3343C8.02233 12.7025 8.02815 13.2937 8.39635 13.6547L9.66605 14.8996C9.84959 15.0796 10.0992 15.1759 10.3561 15.1659C10.6129 15.1559 10.8543 15.0405 11.0233 14.8468L19.7129 4.8874ZM13.5114 4.86132C13.8359 4.46062 13.7742 3.87267 13.3735 3.5481C12.9728 3.22352 12.3849 3.28524 12.0603 3.68594L4.64352 12.8423L1.61712 9.83584C1.25128 9.47242 0.660106 9.47437 0.296684 9.8402C-0.066738 10.206 -0.0647843 10.7972 0.301048 11.1606L4.06058 14.8954C4.24791 15.0815 4.50528 15.1796 4.76895 15.1653C5.03263 15.1511 5.27794 15.0259 5.44415 14.8207L13.5114 4.86132Z"
+													fill="#7A7A7A" />
+											</g>
+										</svg>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24"
+										fill="none">
+										<path
+											d="M32.131 23.8965H0.0576172L25.0799 0.822266V12.0087C25.0799 16.5604 28.0665 20.5728 32.4267 21.8791C33.5639 22.2198 33.3182 23.8965 32.131 23.8965Z"
+											fill="#FBEBDE" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="bot__image">
+							<picture><source srcset="img/bot-img.webp" type="image/webp"><img src="img/bot-img.png" alt="Бот Майя"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="user" id="user">
+				<div class="user__header header-block header-block_white">
+					<a data-goto="#bot" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Система лояльности</div>
+					</div>
+					<a data-goto="#menu-crap" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="user__bg-wrap">
+					<div class="user__container">
+						<div class="user__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+								fill="none">
+								<path
+									d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+									fill="white" />
+								<path
+									d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="user__slider swiper">
+							<div class="user__wrapper swiper-wrapper">
+								<div class="user__slide swiper-slide">
+									<div class="user__content">
+										<div class="user__top">
+											Пользователь
+											<span>(функции)</span>
+										</div>
+										<ul class="user__list">
+											<li class="user__item">При регистрации <span>начисление 300
+													бонусов</span>
+											</li>
+											<li class="user__item"><span>Кешбек 10% бонусами</span> с каждого
+												заказа.
+											</li>
+										</ul>
+										<div class="user__block">
+											Владелец <br> заведения <span>(функции)</span>
+										</div>
+										<div class="user__bottom">Возможность делать <span>массовые рассылки</span>
+											на
+											свою аудиторию.</div>
+									</div>
+									<div class="user__image">
+										<picture><source srcset="img/user-slider1.webp" type="image/webp"><img src="img/user-slider1.png" alt="карточка начисление бонуса"></picture>
+									</div>
+								</div>
+								<div class="user__slide swiper-slide">
+									<div class="user__content">
+										<div class="user__top">
+											Пользователь
+											<span>(функции)</span>
+										</div>
+										<ul class="user__list">
+											<li class="user__item"><span>Списание бонусами</span> до 50% от суммы
+												заказа.</li>
+											<li class="user__item"><span>Получение рассылок</span> по новинкам
+												(инфоповоды).</li>
+										</ul>
+										<div class="user__block">
+											Владелец <br> заведения <span>(функции)</span>
+										</div>
+										<div class="user__bottom">Автоматический <span>учет броней</span> через бота
+											для
+											сотрудников с оповещением в Telegram. </div>
+									</div>
+									<div class="user__image">
+										<picture><source srcset="img/user-slider2.webp" type="image/webp"><img src="img/user-slider2.png" alt="карточка штрихкод"></picture>
+									</div>
+								</div>
+								<div class="user__slide swiper-slide">
+									<div class="user__content">
+										<div class="user__top">
+											Пользователь
+											<span>(функции)</span>
+										</div>
+										<ul class="user__list">
+											<li class="user__item">Просмотр истории заказов.</li>
+											<li class="user__item"><span>Возможность бронирования</span> в пару
+												кликов.
+											</li>
+										</ul>
+										<div class="user__block">
+											Владелец <br> заведения <span>(функции)</span>
+										</div>
+										<div class="user__bottom">Автоматизированные <span>постоянные
+												инфоповоды</span>
+											по новинкам для ваших гостей</div>
+									</div>
+									<div class="user__image">
+										<picture><source srcset="img/user-slider3.webp" type="image/webp"><img src="img/user-slider3.png" alt="карточка инфоповоды"></picture>
+									</div>
+								</div>
+								<div class="user__slide swiper-slide">
+									<div class="user__content">
+										<div class="user__top">
+											Пользователь <span>(функции)</span>
+										</div>
+										<ul class="user__list">
+											<li class="user__item">Отправка сообщений <span>в выбранное
+													заведение.</span></li>
+											<li class="user__item">Просмотр <span>актуальных акций</span> в боте.
+											</li>
+											<li class="user__item"><span>Автоматические начисление подарочных
+													бонусов</span> для тех, кто не посещал заведение больше 2х
+												недель.
+											</li>
+										</ul>
+									</div>
+									<div class="user__image">
+										<picture><source srcset="img/user-slider4.webp" type="image/webp"><img src="img/user-slider4.png" alt="карточка акции в боте"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="user__scrollbar swiper-scrollbar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-crap" id="menu-crap">
+				<div class="menu-crap__header header-block">
+					<a data-goto="#user" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Крафтовое меню</div>
+					</div>
+					<a data-goto="#place" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="menu-crap__bg-wrap">
+					<div class="menu-crap__container">
+						<div class="menu-crap__swap">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25" fill="none">
+								<path
+									d="M21.0229 1.13637V3.43184C18.3865 1.2841 15.0228 0 11.3637 0C7.7046 0 4.34094 1.2841 1.70456 3.43184V1.13637H0V6.81823H5.68186V5.11367H2.37502C4.77276 3.00002 7.92051 1.70456 11.3637 1.70456C14.8069 1.70456 17.9433 3.00002 20.3524 5.11367H17.0456V6.81823H22.7274V1.13637H21.0229Z"
+									fill="#151515" />
+								<path
+									d="M19.193 14.5112L14.8748 12.6135C14.7271 12.5453 14.5566 12.4998 14.3748 12.4998H13.6362V7.53389C13.6362 6.03388 12.5453 4.69296 11.0566 4.5566C10.6634 4.52165 10.2672 4.56878 9.89319 4.69498C9.51915 4.82118 9.1754 5.02371 8.88374 5.28973C8.59208 5.55575 8.35886 5.87946 8.19887 6.24034C8.03888 6.60123 7.9556 6.99141 7.95432 7.38616V16.6476L5.8293 16.193C5.61339 16.159 4.67021 16.0226 3.86338 16.8294L2.27246 18.4317L8.09068 24.3295C8.51114 24.7613 9.09069 24.9999 9.69297 24.9999H17.1362C18.2498 24.9999 19.193 24.2045 19.3749 23.1022L20.4203 16.9203C20.5007 16.4403 20.4248 15.9471 20.2039 15.5134C19.9829 15.0797 19.6286 14.7284 19.193 14.5112ZM18.1817 16.5453L17.1362 22.7272H9.69297L5.48839 18.4317L10.2271 19.4431V7.38616C10.2271 7.06798 10.4771 6.81798 10.7952 6.81798C11.1134 6.81798 11.3634 7.06798 11.3634 7.38616V14.4089H13.3634L18.1817 16.5453Z"
+									fill="#151515" />
+							</svg>
+						</div>
+						<div class="menu-crap__top">Мы предлагаем уникальное меню с множеством крафтовых позиций</div>
+						<div class="menu-crap__body">
+							<div class="menu-crap__column">
+								<a href="#" class="menu-crap__value">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+										fill="none">
+										<path
+											d="M10.2383 1.8252L17.2998 8.8377L10.2383 15.8502M16.319 8.8377L1.99981 8.8377"
+											stroke="black" stroke-width="2.55" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span>Меню крафтового Пива</span>
+								</a>
+								<a href="#" class="menu-crap__value">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+										fill="none">
+										<path
+											d="M10.2383 1.8252L17.2998 8.8377L10.2383 15.8502M16.319 8.8377L1.99981 8.8377"
+											stroke="black" stroke-width="2.55" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span>Меню закусок</span>
+								</a>
+							</div>
+							<div class="menu-crap__column">
+								<a href="#" class="menu-crap__value">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+										fill="none">
+										<path
+											d="M10.2383 1.8252L17.2998 8.8377L10.2383 15.8502M16.319 8.8377L1.99981 8.8377"
+											stroke="black" stroke-width="2.55" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span>Меню Крафтовых Лимонадов</span>
+								</a>
+								<a href="#" class="menu-crap__value">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+										fill="none">
+										<path
+											d="M10.2383 1.8252L17.2998 8.8377L10.2383 15.8502M16.319 8.8377L1.99981 8.8377"
+											stroke="black" stroke-width="2.55" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span>меню “простого” чая</span>
+								</a>
+							</div>
+							<div class="menu-crap__column">
+								<a href="#" class="menu-crap__value">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+										fill="none">
+										<path
+											d="M10.2383 1.8252L17.2998 8.8377L10.2383 15.8502M16.319 8.8377L1.99981 8.8377"
+											stroke="black" stroke-width="2.55" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span>меню китайского чая <br> с посудой для чайной церемонии</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-crap-container-big">
+					<div class="menu-crap__slider swiper">
+						<div class="menu-crap__wrapper swiper-wrapper">
+							<div class="menu-crap__slide swiper-slide">
+								<picture><source srcset="img/menu-img1.webp" type="image/webp"><img src="img/menu-img1.png" alt="меню"></picture>
+							</div>
+							<div class="menu-crap__slide swiper-slide">
+								<picture><source srcset="img/menu-img2.webp" type="image/webp"><img src="img/menu-img2.png" alt="меню"></picture>
+							</div>
+							<div class="menu-crap__slide swiper-slide">
+								<picture><source srcset="img/menu-img3.webp" type="image/webp"><img src="img/menu-img3.png" alt="меню"></picture>
+							</div>
+							<div class="menu-crap__slide swiper-slide">
+								<picture><source srcset="img/menu-img4.webp" type="image/webp"><img src="img/menu-img4.png" alt="меню"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-crap__icon">
+					<picture><source srcset="img/menu-icon1.webp" type="image/webp"><img src="img/menu-icon1.png" alt=""></picture>
+				</div>
+				<div class="menu-crap__icon-2">
+					<picture><source srcset="img/menu-icon2.webp" type="image/webp"><img src="img/menu-icon2.png" alt=""></picture>
+				</div>
+				<div class="menu-crap__icon-3">
+					<picture><source srcset="img/menu-icon3.webp" type="image/webp"><img src="img/menu-icon3.png" alt=""></picture>
+				</div>
+			</div>
+			<div class="place" id="place">
+				<div class="place__header header-block header-block_white">
+					<a data-goto="#menu-crap" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Заведения без пафоса</div>
+					</div>
+					<a data-goto="#examples" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="place__container">
+					<div class="place__top">
+						Все больше и больше в столице развиваются заведения общепита <span>формата “Антилюкс”</span>
+
+					</div>
+				</div>
+				<div class="place__container">
+					<div class="place__middle">Подход представляет собой минимальные вложения в интерьер в сочетании с
+						<span>максимальным креативом и нестандартными идеями.</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+							<path d="M17.3647 18.5101L2.43732 18.5621L2.48933 3.63442M3.47755 17.5219L18.665 2.3341"
+								stroke="white" stroke-width="3.82494" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+				</div>
+				<div class="place__container">
+					<div class="place__bottom">
+						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+							<path d="M18.6144 3.51013L18.6665 18.4379L3.73839 18.3858M17.6262 17.3976L2.43803 2.20981"
+								stroke="white" stroke-width="3.82503" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						В результате получается что-то новое, свежее, и почему-то <span>каждому знакомое в душе.</span>
+					</div>
+				</div>
+				<div class="place__icon">
+					<picture><source srcset="img/place-icon1.webp" type="image/webp"><img src="img/place-icon1.png" alt=""></picture>
+				</div>
+				<div class="place__icon-2">
+					<picture><source srcset="img/place-icon2.webp" type="image/webp"><img src="img/place-icon2.png" alt=""></picture>
+				</div>
+				<div class="place__icon-3">
+					<img src="img/place-icon3.svg" alt="">
+				</div>
+				<div class="place__icon-4">
+					<picture><source srcset="img/place-icon4.webp" type="image/webp"><img src="img/place-icon4.png" alt=""></picture>
+				</div>
+				<div class="place__icon-5">
+					<picture><source srcset="img/place-icon5.webp" type="image/webp"><img src="img/place-icon5.png" alt=""></picture>
+				</div>
+			</div>
+			<section class="examples" id="examples">
+				<div class="examples__header header-block">
+					<a data-goto="#place" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Заведения без пафоса</div>
+					</div>
+					<a data-goto="#cards" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="examples__bg-wrap">
+					<div class="examples__container">
+						<div class="examples__swap">
+							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+								fill="none">
+								<path
+									d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+									fill="#151515" />
+								<path
+									d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+									fill="#151515" />
+							</svg>
+						</div>
+						<div class="examples__top">
+							<div class="examples__decor">
+								<picture><source srcset="img/examples-decor2.webp" type="image/webp"><img src="img/examples-decor2.png" alt=""></picture>
+							</div>
+							<h2 class="examples__title">При <br>меры:</h2>
+						</div>
+						<div class="examples__slider swiper">
+							<div class="examples__wrapper swiper-wrapper">
+								<div class="examples__slide swiper-slide">
+									<div class="examples__content">
+										<div class="examples__item">
+											<div class="examples__value">МЕСТО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon1.webp" type="image/webp"><img src="img/examples-icon1.png" alt=""></picture>
+												</div>
+												<div class="examples__text">“Летняя кафешка <br> на патриках”</div>
+											</div>
+										</div>
+										<div class="examples__item">
+											<div class="examples__value">МЕТРО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon2.webp" type="image/webp"><img src="img/examples-icon2.png" alt=""></picture>
+												</div>
+												<div class="examples__text-2"><span>Пушкинская</span> <br> или
+													<span>Тверская</span>
+												</div>
+												<picture><source srcset="img/arrow.webp" type="image/webp"><img class="examples__arrow" src="img/arrow.png" alt=""></picture>
+											</div>
+										</div>
+										<div class="examples__bottom">Фотокарточка:</div>
+									</div>
+									<div class="examples__media">
+										<div class="examples__label">
+											Та самая летняя кафешка
+										</div>
+										<div class="examples__image">
+											<picture><source srcset="img/examples-slider1.webp" type="image/webp"><img src="img/examples-slider1.png" alt="Летняя кафешка на патриках"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="examples__slide swiper-slide">
+									<div class="examples__content">
+										<div class="examples__item">
+											<div class="examples__value">МЕСТО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon1.webp" type="image/webp"><img src="img/examples-icon1.png" alt=""></picture>
+												</div>
+												<div class="examples__text">“Сюр”</div>
+											</div>
+										</div>
+										<div class="examples__item">
+											<div class="examples__value">МЕТРО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon2.webp" type="image/webp"><img src="img/examples-icon2.png" alt=""></picture>
+												</div>
+												<div class="examples__text-2"><span>Китай-город</span></div>
+												<picture><source srcset="img/arrow.webp" type="image/webp"><img class="examples__arrow" src="img/arrow.png" alt=""></picture>
+											</div>
+										</div>
+										<div class="examples__bottom">Фотокарточка:</div>
+									</div>
+									<div class="examples__media">
+										<div class="examples__label">
+											Китай-город
+										</div>
+										<div class="examples__image">
+											<picture><source srcset="img/examples-slider2.webp" type="image/webp"><img src="img/examples-slider2.png" alt="“Сюр”"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="examples__slide swiper-slide">
+									<div class="examples__content">
+										<div class="examples__item">
+											<div class="examples__value">МЕСТО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon1.webp" type="image/webp"><img src="img/examples-icon1.png" alt=""></picture>
+												</div>
+												<div class="examples__text">“La Virgen”</div>
+											</div>
+										</div>
+										<div class="examples__item">
+											<div class="examples__value">МЕТРО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon2.webp" type="image/webp"><img src="img/examples-icon2.png" alt=""></picture>
+												</div>
+												<div class="examples__text-2"><span>Лубянка</span></div>
+												<picture><source srcset="img/arrow.webp" type="image/webp"><img class="examples__arrow" src="img/arrow.png" alt=""></picture>
+											</div>
+										</div>
+										<div class="examples__bottom">Фотокарточка:</div>
+									</div>
+									<div class="examples__media">
+										<div class="examples__label">
+											Ну полный сюр
+										</div>
+										<div class="examples__image">
+											<picture><source srcset="img/examples-slider3.webp" type="image/webp"><img src="img/examples-slider3.png" alt="La Virgen"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="examples__slide swiper-slide">
+									<div class="examples__content">
+										<div class="examples__item">
+											<div class="examples__value">МЕСТО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon1.webp" type="image/webp"><img src="img/examples-icon1.png" alt=""></picture>
+												</div>
+												<div class="examples__text-2">“Аренда-бар”</div>
+											</div>
+										</div>
+										<div class="examples__item">
+											<div class="examples__value">МЕТРО:</div>
+											<div class="examples__row">
+												<div class="examples__icon">
+													<picture><source srcset="img/examples-icon2.webp" type="image/webp"><img src="img/examples-icon2.png" alt=""></picture>
+												</div>
+												<div class="examples__text"><span>Китай-город</span></div>
+												<picture><source srcset="img/arrow.webp" type="image/webp"><img class="examples__arrow" src="img/arrow.png" alt=""></picture>
+											</div>
+										</div>
+										<div class="examples__bottom">Фотокарточка:</div>
+									</div>
+									<div class="examples__media">
+										<div class="examples__label">
+											Китай-город
+										</div>
+										<div class="examples__image">
+											<picture><source srcset="img/examples-slider4.webp" type="image/webp"><img src="img/examples-slider4.png" alt="Аренда-бар"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="examples__scrollbar swiper-scrollbar"></div>
+					</div>
+				</div>
+				<div class="examples__decor-2">
+					<picture><source srcset="img/examples-decor1.webp" type="image/webp"><img src="img/examples-decor1.png" alt=""></picture>
+				</div>
+				<div class="examples__decor-3">
+					<picture><source srcset="img/examples-decor3.webp" type="image/webp"><img src="img/examples-decor3.png" alt=""></picture>
+				</div>
+				<div class="examples__decor-4">
+					<img src="img/examples-decor4.svg" alt="">
+				</div>
+			</section>
+			<div class="cards" id="cards">
+				<div class="cards__header header-block">
+					<a data-goto="#examples" href="" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Заведения без пафоса</div>
+					</div>
+					<a data-goto="#freedom" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="cards__bg-wrap">
+					<div class="cards__container">
+						<div class="cards__body">
+							<div class="cards__left">
+								<div class="cards__arrows">
+									<picture><source srcset="img/arr-1.webp" type="image/webp"><img src="img/arr-1.png" alt=""></picture>
+									<picture><source srcset="img/arr-2.webp" type="image/webp"><img src="img/arr-2.png" alt=""></picture>
+									<picture><source srcset="img/arr-1.webp" type="image/webp"><img src="img/arr-1.png" alt=""></picture>
+								</div>
+								<div class="cards__text">Людей уже давно не цепляет эпоксидная смола, мраморная плитка и
+									прочая роскошь. </div>
+								<div class="cards__bottom">
+									<p>Людей цепляют <span>креативные идеи и все то, что вызывает эмоции</span></p>
+									<picture><source srcset="img/cards-icon.webp" type="image/webp"><img src="img/cards-icon.png" alt=""></picture>
+									<svg xmlns="http://www.w3.org/2000/svg" width="530" height="122"
+										viewBox="0 0 530 122" fill="none">
+										<path
+											d="M507.918 1.09961H57.2315C48.8425 1.09961 41.2388 6.03541 37.8237 13.6978L3.32534 91.1017C-2.93813 105.155 7.34718 121 22.7331 121H476.654C485.316 121 493.111 115.741 496.355 107.709L527.619 30.3054C533.261 16.3388 522.981 1.09961 507.918 1.09961Z"
+											fill="url(#paint0_linear_2028_5080)" stroke="black"
+											stroke-width="1.51772" />
+										<defs>
+											<linearGradient id="paint0_linear_2028_5080" x1="-10" y1="61.0497"
+												x2="539.416" y2="61.0497" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF9A9E" />
+												<stop offset="0.99" stop-color="#FAD0C4" />
+												<stop offset="1" stop-color="#FAD0C4" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+							</div>
+							<div class="cards__right">
+								<div class="cards__desc">
+									Мы поддерживаем этот формат и не стремимся за роскошью, мы за <span>идейную красоту
+										и уникальный</span> <span>креатив.</span>
+								</div>
+								<div class="cards__image">
+									<picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt=""></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cards__media">
+						<picture><source srcset="img/cards-slider1.webp" type="image/webp"><img src="img/cards-slider1.png" alt=""></picture>
+						<picture><source srcset="img/cards-slider2.webp" type="image/webp"><img src="img/cards-slider2.png" alt=""></picture>
+						<picture><source srcset="img/cards-slider3.webp" type="image/webp"><img src="img/cards-slider3.png" alt=""></picture>
+						<picture><source srcset="img/cards-slider4.webp" type="image/webp"><img src="img/cards-slider4.png" alt=""></picture>
+						<picture><source srcset="img/cards-slider5.webp" type="image/webp"><img src="img/cards-slider5.png" alt=""></picture>
+						<picture><source srcset="img/cards-slider6.webp" type="image/webp"><img src="img/cards-slider6.png" alt=""></picture>
+					</div>
+				</div>
+				<div class="cards__decor">
+					<picture><source srcset="img/cards-decor1.webp" type="image/webp"><img src="img/cards-decor1.png" alt=""></picture>
+				</div>
+				<div class="cards__decor-2">
+					<picture><source srcset="img/cards-decor2.webp" type="image/webp"><img src="img/cards-decor2.png" alt=""></picture>
+				</div>
+				<div class="cards__decor-3">
+					<img src="img/cards-decor3.svg" alt="">
+				</div>
+			</div>
+			<div class="freedom" id="freedom">
+				<div class="cards__header header-block">
+					<a data-goto="#cards" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Свобода франчайзи</div>
+					</div>
+					<a data-goto="#system" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="freedom__bg-wrap">
+					<div class="freedom__container">
+						<div class="freedom__swap">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"
+								fill="none">
+								<path
+									d="M21.0229 1.13637V3.43184C18.3865 1.2841 15.0228 0 11.3637 0C7.7046 0 4.34094 1.2841 1.70456 3.43184V1.13637H0V6.81823H5.68186V5.11367H2.37502C4.77276 3.00002 7.92051 1.70456 11.3637 1.70456C14.8069 1.70456 17.9433 3.00002 20.3524 5.11367H17.0456V6.81823H22.7274V1.13637H21.0229Z"
+									fill="#151515" />
+								<path
+									d="M19.193 14.5117L14.8748 12.614C14.7271 12.5458 14.5566 12.5003 14.3748 12.5003H13.6362V7.53438C13.6362 6.03437 12.5453 4.69345 11.0566 4.55709C10.6634 4.52214 10.2672 4.56926 9.89319 4.69547C9.51915 4.82167 9.1754 5.0242 8.88374 5.29022C8.59208 5.55624 8.35886 5.87995 8.19887 6.24083C8.03888 6.60171 7.9556 6.9919 7.95432 7.38665V16.6481L5.8293 16.1935C5.61339 16.1594 4.67021 16.0231 3.86338 16.8299L2.27246 18.4322L8.09068 24.33C8.51114 24.7618 9.09069 25.0004 9.69297 25.0004H17.1362C18.2498 25.0004 19.193 24.205 19.3749 23.1027L20.4203 16.9208C20.5007 16.4408 20.4248 15.9476 20.2039 15.5139C19.9829 15.0802 19.6286 14.7289 19.193 14.5117ZM18.1817 16.5458L17.1362 22.7277H9.69297L5.48839 18.4322L10.2271 19.4436V7.38665C10.2271 7.06847 10.4771 6.81847 10.7952 6.81847C11.1134 6.81847 11.3634 7.06847 11.3634 7.38665V14.4094H13.3634L18.1817 16.5458Z"
+									fill="#151515" />
+							</svg>
+						</div>
+						<div class="freedom__top">
+							<div class="freedom__column">
+								<div class="freedom__wrap">Единственное требование –
+									<span>сохранение кальянного меню</span> <span>TEPLO Place.</span>
+								</div>
+							</div>
+							<div class="freedom__column">
+								<div class="freedom__text">
+									<p>Мы предоставляем готовое <span>проработанное меню</span> напитков, чая и пр.</p>
+									<p>Но оставляем за вами полное право на <span>изменение ассортимента меню.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="freedom__bg-wrap">
+					<div class="freedom__icon">
+						<picture><source srcset="img/freedom-icon.webp" type="image/webp"><img src="img/freedom-icon.png" alt="сердечко"></picture>
+					</div>
+					<div class="freedom__container">
+						<div class="freedom__slider swiper">
+							<div class="freedom__wrapper swiper-wrapper">
+								<div class="freedom__slide swiper-slide">
+									<div class="freedom__content">
+										Мы даем <span>полную свободу</span> в выборе любых референсов интерьера, мебели
+										и планировки.
+									</div>
+									<div class="freedom__image">
+										<picture><source srcset="img/freedom1.webp" type="image/webp"><img src="img/freedom1.png" alt="меню"></picture>
+									</div>
+								</div>
+								<div class="freedom__slide swiper-slide">
+									<div class="freedom__content">
+										Оказываем <span>полную поддержку по разработке дизайна</span> <span
+											class="freedom__span-big">интерьера</span> и внедрению самых нестандартных и
+										удивительных идей.
+									</div>
+									<div class="freedom__image">
+										<picture><source srcset="img/freedom2.webp" type="image/webp"><img src="img/freedom2.png" alt="кальян"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="system" id="system">
+				<div class="system__header header-block">
+					<a data-goto="#freedom" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Готовая CRM система</div>
+					</div>
+					<a data-goto="#ready" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="system__bg-wrap">
+					<div class="system__container">
+						<div class="system__icon">
+							<picture><source srcset="img/system-icon.webp" type="image/webp"><img src="img/system-icon.png" alt="quick resto"></picture>
+						</div>
+						<div class="system__text">Мы <span>доработали</span> готовую CRM QuickResto под наши нужды и
+							<span>
+								сами переписали
+								API.
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="system__bg-wrap">
+					<div class="system__container">
+
+						<div class="system__block">
+							<div class="system__arrow">
+								<picture><source srcset="img/system-arrow.webp" type="image/webp"><img src="img/system-arrow.png" alt=""></picture>
+							</div>
+							<div class="system__desc">Теперь это готовая CRM под наш уникальный формат, интегрированная
+								с:</div>
+							<div class="system__body">
+								<div class="system__column">
+									<div class="system__wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+											viewBox="0 0 18 19" fill="none">
+											<path
+												d="M16 10.2383L8.9875 17.2998L1.975 10.2383M8.9875 16.319L8.9875 1.99981"
+												stroke="white" stroke-width="2.55" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<a href="" class="system__link">- Системой лояльности Майя</a>
+									</div>
+									<div class="system__wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+											viewBox="0 0 18 19" fill="none">
+											<path
+												d="M16 10.2383L8.9875 17.2998L1.975 10.2383M8.9875 16.319L8.9875 1.99981"
+												stroke="white" stroke-width="2.55" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<a href="" class="system__link">- Учетом складских остатков</a>
+									</div>
+								</div>
+								<div class="system__column">
+									<div class="system__wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+											viewBox="0 0 18 19" fill="none">
+											<path
+												d="M16 10.2383L8.9875 17.2998L1.975 10.2383M8.9875 16.319L8.9875 1.99981"
+												stroke="white" stroke-width="2.55" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<a href="" class="system__link">- Финансовой аналитикой</a>
+									</div>
+									<div class="system__wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+											viewBox="0 0 18 19" fill="none">
+											<path
+												d="M16 10.2383L8.9875 17.2998L1.975 10.2383M8.9875 16.319L8.9875 1.99981"
+												stroke="white" stroke-width="2.55" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<a href="" class="system__link">- Регулярными отчетами</a>
+									</div>
+								</div>
+							</div>
+							<div class="system__decor">
+								<picture><source srcset="img/system-decor1.webp" type="image/webp"><img src="img/system-decor1.png" alt=""></picture>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="399" viewBox="0 0 1190 399"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M582.409 0.799877C759.495 4.92421 963.59 31.1352 1083.87 126.241C1207.28 223.827 1203.53 353.648 1166.01 462.271C1132.29 559.902 1038.71 644.921 893.181 678.257C765.975 707.396 621.064 647.49 478.703 619.712C347.068 594.027 198.161 594.029 105.558 524.571C8.21934 451.562 -16.0468 352.07 10.7056 268.688C35.5021 191.401 143.813 151.494 239.666 106.58C344.674 57.3753 441.516 -2.48151 582.409 0.799877Z"
+									fill="url(#paint0_linear_2028_3001)" />
+								<defs>
+									<linearGradient id="paint0_linear_2028_3001" x1="652.617" y1="-5.49875" x2="543.383"
+										y2="646.413" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#8180FE" />
+										<stop offset="1" stop-color="#FF84F3" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+					</div>
+					<div class="system__decor-2">
+						<img src="img/system-decor2.svg" alt="">
+					</div>
+					<div class="system__decor-3">
+						<img src="img/system-decor3.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="ready" id="ready">
+				<div class="ready__header header-block">
+					<a data-goto="#system" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Готовая CRM система</div>
+					</div>
+					<a data-goto="#advertisement" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="ready__bg-wrap">
+					<div class="ready__container">
+						<div class="ready__block">
+							<p>Обслуживание QuickResto обходится за символический прайс «Под ключ» - <span>20 тыс. руб в
+									год</span></p>
+							<svg xmlns="http://www.w3.org/2000/svg" width="113" height="113" viewBox="0 0 113 113"
+								fill="none">
+								<g clip-path="url(#clip0_2046_14577)">
+									<path
+										d="M86.791 103.037L65.1201 82.8972L59.4808 111.953L50.7534 83.6759L31.3382 106.018L37.9442 77.1505L9.93591 86.791L30.103 65.1201L1.02051 59.4808L29.3242 50.7534L6.98201 31.3382L35.8228 37.9442L26.1823 9.93591L47.8801 30.103L53.5193 1.02051L62.2467 29.3242L81.6619 6.98201L75.0559 35.8228L103.037 26.1823L82.8972 47.8801L111.953 53.5193L83.6759 62.2467L106.018 81.6619L77.1505 75.0559L86.791 103.037Z"
+										fill="#FFF301" />
+									<path
+										d="M59.4805 113C59.024 113 58.6212 112.704 58.4869 112.275L50.3234 85.7433L32.1167 106.689C31.7944 107.038 31.2842 107.146 30.8814 106.931C30.4517 106.716 30.2369 106.233 30.3443 105.776L36.5207 78.7345L10.2847 87.7842C9.82816 87.9453 9.3448 87.7573 9.07626 87.3814C8.80772 86.9786 8.86143 86.4684 9.18367 86.1193L28.0618 65.7911L0.832199 60.4741C0.375688 60.3935 0.0265907 59.9907 -0.000262933 59.5073C-0.0271165 59.024 0.268273 58.5943 0.724785 58.4601L27.2562 50.2966L6.31034 32.0898C5.96124 31.7676 5.85383 31.2573 6.06865 30.8545C6.28348 30.4249 6.76685 30.2101 7.22336 30.3175L34.2649 36.4938L25.2153 10.2847C25.0542 9.82816 25.2421 9.3448 25.6181 9.07626C26.0209 8.80772 26.5311 8.86143 26.8802 9.18367L47.2084 28.0618L52.4986 0.832199C52.5791 0.375688 52.9819 0.0265907 53.4653 -0.000262933C53.9487 -0.0271165 54.3783 0.268273 54.5126 0.724785L62.6761 27.2562L80.8828 6.31034C81.2051 5.96124 81.7153 5.85383 82.1181 6.06865C82.5477 6.28348 82.7626 6.76685 82.6552 7.22336L76.4788 34.2649L102.715 25.2153C103.171 25.0542 103.655 25.2421 103.923 25.6181C104.192 26.0209 104.138 26.5311 103.816 26.8802L84.9377 47.2084L112.167 52.4986C112.624 52.5791 112.973 52.9819 113 53.4653C113.027 53.9487 112.731 54.3783 112.275 54.5126L85.7433 62.6761L106.689 80.8828C107.038 81.2051 107.146 81.7153 106.931 82.1181C106.716 82.5477 106.233 82.7626 105.776 82.6552L78.7345 76.4788L87.7842 102.715C87.9453 103.171 87.7573 103.655 87.3814 103.923C86.9786 104.192 86.4684 104.138 86.1193 103.816L65.7911 84.9377L60.5009 112.167C60.4204 112.624 60.0176 112.973 59.5342 113C59.5073 113 59.4805 113 59.4805 113ZM50.7531 82.6283C50.8336 82.6283 50.8873 82.6283 50.9679 82.6552C51.3438 82.7357 51.6392 83.0043 51.7467 83.3534L59.2388 107.71L64.0993 82.682C64.1799 82.3061 64.4484 82.0107 64.7975 81.9033C65.1466 81.7958 65.5494 81.8764 65.8179 82.1181L84.5081 99.4655L76.2103 75.3778C76.076 75.0287 76.1566 74.6259 76.4251 74.3574C76.6668 74.0889 77.0696 73.9546 77.4187 74.0352L102.258 79.7281L82.9774 63.0252C82.682 62.7835 82.5746 62.4075 82.6552 62.0316C82.7357 61.6556 83.0043 61.3602 83.3534 61.2528L107.71 53.7607L82.7089 48.9002C82.3329 48.8196 82.0375 48.5511 81.9301 48.202C81.8227 47.8529 81.9033 47.4501 82.1449 47.1815L99.4924 28.4914L75.4047 36.7892C75.0556 36.9235 74.6528 36.8429 74.3842 36.5744C74.1157 36.3327 73.9814 35.9299 74.062 35.5808L79.755 10.7412L63.052 29.9952C62.8103 30.2906 62.4344 30.398 62.0584 30.3175C61.6825 30.2369 61.3871 29.9684 61.2797 29.6193L53.7875 5.26305L48.927 30.2906C48.8465 30.6666 48.5779 30.962 48.2288 31.0694C47.8797 31.1768 47.4769 31.0962 47.2084 30.8545L28.5183 13.5071L36.816 37.5948C36.9503 37.9439 36.8698 38.3467 36.6012 38.6152C36.3595 38.8838 35.9567 39.018 35.6076 38.9375L10.768 33.2445L30.0221 49.9475C30.3175 50.1891 30.4249 50.5651 30.3443 50.941C30.2638 51.317 29.9952 51.6124 29.6461 51.7198L5.2899 59.212L30.3175 64.0725C30.6934 64.153 30.9888 64.4216 31.0962 64.7707C31.2036 65.1198 31.1231 65.5226 30.8814 65.7911L13.534 84.4812L37.6217 76.1834C37.9707 76.0492 38.3736 76.1297 38.6421 76.3983C38.9106 76.64 39.0449 77.0428 38.9643 77.3919L33.2714 102.231L49.9743 82.9774C50.1623 82.7626 50.4577 82.6283 50.7531 82.6283Z"
+										fill="black" />
+								</g>
+								<defs>
+									<clipPath id="clip0_2046_14577">
+										<rect width="113" height="113" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="ready__bg-wrap">
+					<div class="ready__container">
+						<div class="ready__body">
+							<div class="ready__image">
+								<picture><source srcset="img/ready1.webp" type="image/webp"><img src="img/ready1.png" alt="QuickResto"></picture>
+							</div>
+							<div class="ready__image">
+								<picture><source srcset="img/ready2.webp" type="image/webp"><img src="img/ready2.png" alt="QuickResto"></picture>
+							</div>
+							<div class="ready__icon">
+								<picture><source srcset="img/ready-icon.webp" type="image/webp"><img src="img/ready-icon.png" alt=""></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ready__decor">
+					<img src="img/ready-decor.svg" alt="">
+				</div>
+			</div>
+			<div class="advertisement" id="advertisement">
+				<div class="advertisement__bg-top">
+					<img src="img/advertisement-top.svg" alt="">
+				</div>
+				<div class="advertisement__header header-block header-block_white">
+					<a data-goto="#ready" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Реклама</div>
+					</div>
+					<a data-goto="#school" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="advertisement__bg-wrap">
+					<div class="advertisement__container">
+						<div class="advertisement__top">
+							Заведения имеют уникальную воронку возврата гостей за счет системы лояльности и генерации
+							постоянных инфоповодов
+						</div>
+					</div>
+				</div>
+				<div class="advertisement__bg-wrap">
+					<div class="advertisement__container">
+						<div class="advertisement__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="75" height="85" viewBox="0 0 75 85"
+								fill="none">
+								<g clip-path="url(#clip0_2042_7198)">
+									<path
+										d="M74.1917 51.8132L65.2637 42.8291L33.1228 75.1718L42.0508 84.1559L74.1917 51.8132Z"
+										fill="#FF85C8" />
+									<path
+										d="M32.1976 75.2167C32.1976 74.9626 32.3239 74.8356 32.4502 74.5815L64.6471 42.1824C65.0259 41.8012 65.531 41.8012 65.7835 42.1824L74.7481 51.2033C75.1269 51.5844 75.1269 52.0927 74.7481 52.3468L42.5512 84.7459C42.1724 85.127 41.6673 85.127 41.4148 84.7459L32.4502 75.725C32.3239 75.5979 32.1976 75.4709 32.1976 75.2167ZM65.2784 44.0882L34.3441 75.2167L42.0461 82.9671L72.9805 51.8386L65.2784 44.0882Z"
+										fill="#0C3ACF" />
+									<path
+										d="M47.3488 0.889648L56.3135 9.78352L56.3135 42.8179L47.3488 42.8179L47.3488 0.889648Z"
+										fill="#FF85C8" />
+									<path
+										d="M46.4652 42.8184L46.4652 0.890155C46.4652 0.508989 46.7178 0.254878 46.9703 0.127823C47.2228 0.000767613 47.6016 0.127823 47.8541 0.254878L56.8188 9.27581C56.945 9.40286 57.0713 9.65697 57.0713 9.91108L57.0713 42.9455C57.0713 43.4537 56.6925 43.8348 56.1874 43.8348L47.2228 43.8348C46.844 43.7078 46.4652 43.3266 46.4652 42.8184ZM48.2329 2.92304L48.2329 41.929L55.4299 41.929L55.4299 10.1652L48.2329 2.92304Z"
+										fill="#0C3ACF" />
+									<path
+										d="M65.2793 42.8189L33.0823 75.218L65.2793 42.8189L47.35 42.8189L47.35 0.890624L18.8147 0.890623L18.8147 42.8189L0.885359 42.8189L33.0823 75.218L65.2793 42.8189Z"
+										fill="#32F0F0" />
+									<path
+										d="M0.000501668 42.8186C0.000501674 42.6916 0.00050168 42.5645 0.126768 42.4374C0.253027 42.1833 0.505552 41.9292 0.884337 41.9292L17.9298 41.9292L17.9298 0.890362C17.9298 0.38214 18.3086 0.000974471 18.8136 0.000974493L47.349 0.00097574C47.854 0.000975762 48.2328 0.382142 48.2328 0.890363L48.2328 41.9292L65.2783 41.9292C65.5308 41.9292 65.6571 42.0563 65.7833 42.1833C65.7833 42.1833 65.7833 42.1833 65.9096 42.3104C66.0358 42.4374 66.0358 42.5645 66.1621 42.8186L66.1621 42.9457C66.1621 43.1998 66.0358 43.3268 65.9096 43.4539L33.7126 75.853C33.5864 75.98 33.3338 76.1071 33.0813 76.1071C32.8288 76.1071 32.7025 75.98 32.45 75.853L0.253027 43.4539C0.12676 43.3268 0.000501657 43.0727 0.000501668 42.8186ZM19.5712 1.65269L19.5712 42.8186C19.5712 43.3268 19.1924 43.708 18.6874 43.708L2.77828 43.708L32.955 74.0742L63.2581 43.708L47.349 43.708C46.8439 43.708 46.4651 43.3268 46.4651 42.8186L46.4651 1.65269L19.5712 1.65269Z"
+										fill="#0C3ACF" />
+								</g>
+								<defs>
+									<clipPath id="clip0_2042_7198">
+										<rect width="85" height="75" fill="white"
+											transform="translate(75) rotate(90)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="advertisement__bg-wrap">
+					<div class="advertisement__container">
+						<div class="advertisement__block">
+							<div class="advertisement__text">
+								Яндекс.Директ, реклама в Тelegram-каналах и пабликах в социальных сетях
+							</div>
+							<div class="advertisement__desc">
+								Внешняя реклама сопровождается предложенными промокодами,
+								которые можно ввести в TG-бот для получения скидки.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="advertisement__bg-wrap">
+					<div class="advertisement__container">
+						<div class="advertisement__bottom">
+							<div class="advertisement__label">
+								Полноценное УТП заведения
+							</div>
+							<div class="advertisement__value">
+								козырь для рекламы среди конкурентов.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="advertisement__decor-1">
+					<img src="img/advertisement-decor.svg" alt="">
+				</div>
+				<div class="advertisement__decor-2">
+					<picture><source srcset="img/advertisement-decor-2.webp" type="image/webp"><img src="img/advertisement-decor-2.png" alt=""></picture>
+				</div>
+				<div class="advertisement__decor-3">
+					<picture><source srcset="img/advertisement-decor-3.webp" type="image/webp"><img src="img/advertisement-decor-3.png" alt=""></picture>
+				</div>
+				<div class="advertisement__decor-4">
+					<img src="img/advertisement-decor-4.svg" alt="">
+				</div>
+				<div class="advertisement__decor-5">
+					<picture><source srcset="img/advertisement-decor-5.webp" type="image/webp"><img src="img/advertisement-decor-5.png" alt=""></picture>
+				</div>
+				<div class="advertisement__decor-6">
+					<picture><source srcset="img/advertisement-decor-6.webp" type="image/webp"><img src="img/advertisement-decor-6.png" alt=""></picture>
+				</div>
+			</div>
+			<div class="school" id="school">
+				<div class="school__header header-block">
+					<a data-goto="#advertisement" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Школа мастеров</div>
+					</div>
+					<a data-goto="#contract" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="school__bg-wrap">
+					<div class="school__container">
+						<div class="school__swap">
+							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38"
+								fill="none">
+								<path
+									d="M31.5345 1.70456V5.14776C27.5799 1.92615 22.5344 0 17.0457 0C11.557 0 6.51144 1.92615 2.55685 5.14776V1.70456H0V10.2273H8.52283V7.67051H3.56254C7.15917 4.50003 11.8808 2.55684 17.0457 2.55684C22.2105 2.55684 26.9151 4.50003 30.5288 7.67051H25.5685V10.2273H34.0913V1.70456H31.5345Z"
+									fill="#151515" />
+								<path
+									d="M28.7902 21.7671L22.3128 18.9205C22.0912 18.8182 21.8355 18.75 21.5628 18.75H20.4548V11.3011C20.4548 9.05107 18.8185 7.03969 16.5855 6.83514C15.9957 6.78273 15.4014 6.85341 14.8403 7.04271C14.2793 7.23201 13.7636 7.53581 13.3261 7.93484C12.8887 8.33387 12.5388 8.81944 12.2988 9.36076C12.0588 9.90208 11.9339 10.4874 11.932 11.0795V24.9716L8.74447 24.2898C8.4206 24.2387 7.00581 24.0341 5.79557 25.2444L3.40918 27.6478L12.1366 36.4944C12.7672 37.1422 13.6366 37.5001 14.54 37.5001H25.7049C27.3754 37.5001 28.7902 36.3069 29.0629 34.6535L30.6311 25.3807C30.7516 24.6607 30.6378 23.9209 30.3064 23.2704C29.975 22.6198 29.4435 22.0929 28.7902 21.7671ZM27.2731 24.8182L25.7049 34.091H14.54L8.2331 27.6478L15.3411 29.1648V11.0795C15.3411 10.6022 15.7161 10.2272 16.1934 10.2272C16.6707 10.2272 17.0457 10.6022 17.0457 11.0795V21.6137H20.0457L27.2731 24.8182Z"
+									fill="#151515" />
+							</svg>
+						</div>
+						<div class="school__top">
+							<div class="school__icon">
+								<picture><source srcset="img/school-icon2.webp" type="image/webp"><img src="img/school-icon2.png" alt=""></picture>
+							</div>
+							<div class="school__text">
+								Мы реализовали полноценную школу для <span>обучения персонала Микстерии:</span>
+							</div>
+						</div>
+						<div class="school__slider swiper">
+							<div class="school__icon-2">
+								<img src="img/school-icon.svg" alt="">
+							</div>
+							<div class="school__wrapper swiper-wrapper">
+								<div class="school__slide swiper-slide">
+									<ul class="school__list">
+										<li class="school__item"><span>Речевые скрипты</span> по представлению формата
+										</li>
+										<li class="school__item">Обучение <span>иммерсивному подходу общения</span> с
+											гостем</li>
+									</ul>
+									<div class="school__image">
+										<picture><source srcset="img/school1.webp" type="image/webp"><img src="img/school1.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="school__slide swiper-slide">
+									<ul class="school__list">
+										<li class="school__item">
+											<span>Скрипты по встрече</span> гостей, представлению миксов, подаче воды,
+											комплиментов
+										</li>
+										<li class="school__item">
+											Скрипты <span>уборки, мытья кальянов, оперативной подачи кальянов</span> и
+											пр.
+										</li>
+									</ul>
+									<div class="school__image">
+										<picture><source srcset="img/school2.webp" type="image/webp"><img src="img/school2.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="school__slide swiper-slide">
+									<ul class="school__list">
+										<li class="school__item"><span>Готовые визуалы-примеры</span> по работе от
+											других сотрудников (в видео формате)</li>
+									</ul>
+									<div class="school__image">
+										<picture><source srcset="img/school3.webp" type="image/webp"><img src="img/school3.png" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="school__scrollbar swiper-scrollbar"></div>
+				</div>
+				<div class="school__decor">
+					<picture><source srcset="img/school-decor.webp" type="image/webp"><img src="img/school-decor.png" alt=""></picture>
+				</div>
+				<div class="school__decor-2">
+					<img src="img/school-decor2.svg" alt="">
+				</div>
+				<div class="school__bg">
+					<picture><source srcset="img/school-bg.webp" type="image/webp"><img src="img/school-bg.png" alt=""></picture>
+				</div>
+			</div>
+			<div class="contract" id="contract">
+				<div class="contract__header header-block header-block_white">
+					<a data-goto="#school" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Бесплатно и без договора</div>
+					</div>
+					<a data-goto="#franchise" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="contract__bg-wrap">
+					<div class="contract__container">
+						<div class="contract__body">
+							<div class="contract__column">
+								<div class="contract__top">Первым 10 заведениям <span>мы отдаем франшизу
+										бесплатно.</span></div>
+								<div class="contract__desc">(это не уловка, не маркетинговый ход,
+									просто мы так решили)</div>
+								<div class="contract__bottom">
+									<div class="contract__value">
+										Роялти <span>не существует.</span>
+									</div>
+									<div class="contract__label">
+										Вы покупаете готовые миксы с наценкой 40 руб за 1 микс.
+									</div>
+								</div>
+							</div>
+							<div class="contract__column">
+								<div class="contract__block">
+									<p>Мы зарабатываем <span>±3% с каждого проданного кальяна в вашем заведении</span>
+									</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="580" height="189"
+										viewBox="0 0 580 189" fill="none">
+										<path
+											d="M554.86 1H68.4472C57.913 1 48.6085 7.86512 45.5009 17.9305L2.60199 156.875C-2.16745 172.323 9.38111 187.975 25.5483 187.975H515.983C526.754 187.975 536.208 180.804 539.11 170.431L577.987 31.4861C582.272 16.1737 570.761 1 554.86 1Z"
+											fill="url(#paint0_linear_2028_5651)" stroke="black"
+											stroke-width="1.71537" />
+										<defs>
+											<linearGradient id="paint0_linear_2028_5651" x1="-7" y1="94.4876"
+												x2="586.517" y2="94.4876" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF9A9E" />
+												<stop offset="0.99" stop-color="#FAD0C4" />
+												<stop offset="1" stop-color="#FAD0C4" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+								<div class="contract__text">Франшиза, в которую мы не вмешиваемся – вы платите только
+									<span>по 40 руб за каждый микс,</span> который закупаете в заведение. </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contract__decor">
+					<picture><source srcset="img/contract1.webp" type="image/webp"><img src="img/contract1.png" alt=""></picture>
+				</div>
+				<div class="contract__decor-2">
+					<picture><source srcset="img/contract2.webp" type="image/webp"><img src="img/contract2.png" alt=""></picture>
+				</div>
+				<div class="contract__decor-3">
+					<picture><source srcset="img/contract3.webp" type="image/webp"><img src="img/contract3.png" alt=""></picture>
+				</div>
+			</div>
+			<section class="franchise" id="franchise">
+				<div class="franchise__header header-block header-block_white">
+					<a data-goto="#contract" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Бесплатно и без договора</div>
+					</div>
+					<a data-goto="#box" href="#" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="franchise__bg-wrap">
+					<div class="franchise__container">
+						<h2 class="franchise__title">Франшиза <span>БЕЗ<svg xmlns="http://www.w3.org/2000/svg" width="115" height="36" viewBox="0 0 115 36" fill="none">
+							<path d="M3.58183 8.17582C39.6487 5.62112 103.079 1.45533 109.449 5.5611C126.026 12.449 0.234625 15.3744 18.8614 20.7096C25.3276 23.3462 51.3097 24.6041 71.4189 22.1382C91.5281 19.6724 87.998 28.9641 56.7939 31.8895" stroke="#151515" stroke-width="6.45675" stroke-linecap="round" stroke-linejoin="round"/>
+						  </svg></span> договора.</h2>
+						<div class="franchise__top">В случае <span>отказа от сотрудничества</span> с Mixteria –</div>
+						<div class="franchise__body">
+							<div class="franchise__column">
+								<div class="franchise__item">1) мы отключаем вас от системы лояльности</div>
+								<div class="franchise__item">2) ограничиваем поставку наших миксов</div>
+							</div>
+							<div class="franchise__column">
+								<div class="franchise__item">3) удаляем одноименные <span>карточки заведений</span> с поисковых агрегаторов (яндекс, гугл, 2гис и пр.)</div>
+								<div class="franchise__item">4) также <span>прекращаем поддержку</span> и сотрудничество.</div>
+							</div>
+						</div>
+						<div class="franchise__desc">Единственное требование франшизы:</div>
+						<div class="franchise__bottom"><span>наличие всех миксов и наличие</span> <span>полного микс-бука сети Mixteria.</span></div>
+					</div>
+				</div>
+				<div class="franchise__decor">
+					<picture><source srcset="img/franchise1.webp" type="image/webp"><img src="img/franchise1.png" alt=""></picture>
+				</div>
+				<div class="franchise__decor-2">
+					<picture><source srcset="img/franchise2.webp" type="image/webp"><img src="img/franchise2.png" alt=""></picture>
+				</div>
+			</section>
+			<section class="box" id="box">
+				<div class="box__header header-block">
+					<a data-goto="#franchise" href="" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Бесплатно и без договора</div>
+					</div>
+					<a data-goto="#links" href="" class="header-block__next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.5004 27.75L22.0911 17.5124C22.3 17.3105 22.4657 17.0708 22.5788 16.8069C22.6918 16.5431 22.75 16.2603 22.75 15.9747C22.75 15.6892 22.6918 15.4064 22.5788 15.1425C22.4657 14.8787 22.3 14.639 22.0911 14.437C21.8822 14.2351 21.6342 14.0749 21.3613 13.9656C21.0883 13.8564 20.7958 13.8001 20.5004 13.8001C20.2049 13.8001 19.9124 13.8564 19.6394 13.9656C19.3665 14.0749 19.1185 14.2351 18.9096 14.437L13.7504 19.4242L13.7504 2.92496C13.7504 2.34813 13.5133 1.79492 13.0914 1.38703C12.6694 0.979146 12.0971 0.750001 11.5004 0.750001C10.9037 0.750001 10.3314 0.979146 9.90942 1.38703C9.48746 1.79491 9.25041 2.34813 9.25041 2.92496L9.25041 19.4242L4.09119 14.437C3.88272 14.2344 3.63485 14.0735 3.36186 13.9638C3.08886 13.854 2.79611 13.7975 2.50044 13.7975C2.20478 13.7975 1.91203 13.854 1.63903 13.9638C1.36603 14.0735 1.11817 14.2344 0.9097 14.437C0.700572 14.6389 0.534665 14.8785 0.421468 15.1424C0.308269 15.4063 0.250005 15.6891 0.250005 15.9747C0.250005 16.2604 0.308269 16.5432 0.421468 16.8071C0.534665 17.0709 0.700572 17.3106 0.909699 17.5124L11.5004 27.75Z"
+								fill="#151515" />
+						</svg>
+					</a>
+				</div>
+				<div class="box__bg-wrap">
+					<div class="box__container">
+						<div class="box__icon">
+							<img src="img/box1.svg" alt="">
+						</div>
+						<div class="box__body">
+							<h2 class="box__title">Мы предлагаем <span>насыщенную</span> коробку </h2>
+							<div class="box__block block-box">
+								<div class="block-box__row">
+									<a href="" class="block-box__tel">
+										<picture><source srcset="img/tel.webp" type="image/webp"><img src="img/tel.png" alt=""></picture>
+										+7 (985) 346-86-86
+									</a>
+									<div class="block-box__social">
+										<a href="" class="block-box__item">
+											<img src="img/telegram.svg" alt="">
+										</a>
+										<a href="" class="block-box__item">
+											<img src="img/whatsapp.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<a href="mailto:manager@teplo.team" class="block-box__mail">
+									<picture><source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt=""></picture>
+									manager@teplo.team
+								</a>
+								<div class="block-box__adress">
+									<picture><source srcset="img/map.webp" type="image/webp"><img src="img/map.png" alt=""></picture>
+									г. Москва, ул. Октябрьская, д.36
+								</div>
+							</div>
+						</div>
+						<div class="box__desc">уже сформированного  и проработанного концепутального проекта с прозрачными условиями сотрудничества.</div>
+						<div class="box__bottom">
+							Формат, который заставляет людей смотреть на все детали<div class="box__span"> <span>широкими от</span> <span>удивления глазами.</span></div>
+							<div class="box__arrow">
+								<picture><source srcset="img/box-arrow.webp" type="image/webp"><img src="img/box-arrow.png" alt=""></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box__decor">
+					<img src="img/box2.svg" alt="">
+				</div>
+				<div class="box__decor-2">
+					<img src="img/box3.svg" alt="">
+				</div>
+				<div class="box__decor-3">
+					<img src="img/box4.svg" alt="">
+				</div>
+				<div class="box__decor-4">
+					<img src="img/box5.svg" alt="">
+				</div>
+				<div class="box__decor-5">
+					<img src="img/box5.svg" alt="">
+				</div>
+				<div class="box__decor-6">
+					<img src="img/box5.svg" alt="">
+				</div>
+				<div class="box__decor-7">
+					<img src="img/box6.svg" alt="">
+				</div>
+			</section>
+			<div class="links" id="links">
+				<div class="links__header header-block header-block_white">
+					<a data-goto="#box" href="#" class="header-block__back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+							<path
+								d="M11.4996 0.75L0.908908 10.9876C0.700009 11.1895 0.5343 11.4292 0.421244 11.6931C0.308189 11.9569 0.25 12.2397 0.25 12.5253C0.25 12.8108 0.308189 13.0936 0.421244 13.3575C0.5343 13.6213 0.700009 13.861 0.908908 14.063C1.11781 14.2649 1.36581 14.4251 1.63875 14.5344C1.91169 14.6436 2.20422 14.6999 2.49965 14.6999C2.79508 14.6999 3.08761 14.6436 3.36055 14.5344C3.63349 14.4251 3.88149 14.2649 4.09039 14.063L9.24962 9.07576L9.24962 25.575C9.24962 26.1519 9.48667 26.7051 9.90862 27.113C10.3306 27.5209 10.9029 27.75 11.4996 27.75C12.0963 27.75 12.6686 27.5209 13.0906 27.113C13.5125 26.7051 13.7496 26.1519 13.7496 25.575L13.7496 9.07576L18.9088 14.063C19.1173 14.2656 19.3651 14.4265 19.6381 14.5362C19.9111 14.646 20.2039 14.7025 20.4996 14.7025C20.7952 14.7025 21.088 14.646 21.361 14.5362C21.634 14.4265 21.8818 14.2656 22.0903 14.063C22.2994 13.8611 22.4653 13.6215 22.5785 13.3576C22.6917 13.0937 22.75 12.8109 22.75 12.5253C22.75 12.2396 22.6917 11.9568 22.5785 11.6929C22.4653 11.4291 22.2994 11.1894 22.0903 10.9876L11.4996 0.75Z"
+								fill="white" />
+						</svg>
+					</a>
+					<div class="header-block__content">
+						<a href="" class="header-block__connect">Связаться</a>
+						<div class="header-block__title">Ссылки</div>
+					</div>
+					<a href="" class="header-block__next">
+					</a>
+				</div>
+				<div class="links__bg-wrap">
+					<div class="links__container">
+						<div class="links__text">(тут снова можно нажимать на кнопочки)</div>
+						<div class="links__body">
+							<div class="links__column">
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>МЕНЮ МИКСОВ ДЛЯ ГОСТЕЙ</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>МЕНЮ МИКСОВ КАК ИНСТРУМЕНТ ДЛЯ ПРИБЫЛИ</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>СИСТЕМА ЛОЯЛЬНОСТИ</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>КОРОБКА СОСТАВЛЯЮЩИХ И ДИЗАЙН</span></a>
+							</div>
+							<div class="links__column">
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Заведения, лишеные пафоса. Закос на развивающийся “антилюкс”</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Крафтовое меню</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Дополнительные фишки</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Готовая CRM Система</span></a>
+							</div>
+							<div class="links__column">
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Реклама</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Свобода франчази</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Школа мастеров</span></a>
+								<a href="" class="links__item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M11.4093 2.36914L19.4746 10.3784L11.4093 18.3877M18.3544 10.3784L1.99982 10.3784" stroke="white" stroke-width="2.91246" stroke-linecap="round" stroke-linejoin="round"/>
+								  </svg><span>Бесплатная франшиза</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="links__decor">
+					<picture><source srcset="img/instrument-icon1.webp" type="image/webp"><img src="img/instrument-icon1.png" alt=""></picture>
+				</div>
+				<div class="links__decor-2">
+					<picture><source srcset="img/place-icon1.webp" type="image/webp"><img src="img/place-icon1.png" alt=""></picture>
+				</div>
+				<div class="links__decor-3">
+					<img src="img/links-icon.svg" alt="">
+				</div>
+			</div>
 		</main>
 	</div>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230807160007"></script>
-	<script src="js/app.js?_v=20230807160007"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230816204253"></script>
+	<script src="js/app.js?_v=20230816204253"></script>
 </body>
 
 </html>
