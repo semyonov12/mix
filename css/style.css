@@ -4285,9 +4285,9 @@ main {
 }
 
 .block-box__adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4297,6 +4297,8 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .block-box__adress img {
@@ -7276,7 +7278,7 @@ main {
   }
 
   .links__item svg {
-    margin-top: 2px;
+    margin-top: 3px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 15px;
             flex: 0 0 15px;
@@ -7383,18 +7385,14 @@ main {
 
 @media (any-hover: hover) {
   .main__button:hover svg {
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 
   .header-block__connect:hover::after {
     width: 0;
     left: 50%;
-  }
-
-  .menu-crap__value:hover span {
-    color: #FFf;
   }
 
   .block-box__tel:hover {
@@ -7408,6 +7406,10 @@ main {
   }
 
   .block-box__mail:hover {
+    color: #FFF15D;
+  }
+
+  .block-box__adress:hover {
     color: #FFF15D;
   }
 
